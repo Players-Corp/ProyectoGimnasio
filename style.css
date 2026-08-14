@@ -1,0 +1,109 @@
+/* Reset básico y variables */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #1a252f;
+    text-align: center;
+}
+
+.membership-plans {
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: center;     
+    align-items: stretch;        
+    gap: 2rem;                   
+    max-width: 1200px;
+    width: 100%;
+}
+
+.plan {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    width: 18rem;               
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.plan.featured {
+    border: 2px solid #3498db;
+    position: relative;
+}
+
+.plan img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.plan h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+}
+
+.plan .description {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; 
+}
+
+.plan .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 1.2rem;
+}
+
+.plan .price span {
+    font-size: 0.85rem;
+    color: #777;
+    font-weight: normal;
+}
+
+.plan button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.plan button:hover {
+    background-color: #2980b9;
+}
+
