@@ -107,3 +107,101 @@ h1 {
     background-color: #2980b9;
 }
 
+/* Contenedor General */
+.contenedor-principal {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+/* Grilla de Tarjetas */
+.lista-clases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.tarjeta-clase {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-clase h2 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-clase .descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tarjeta-clase .info-horario {
+    font-size: 0.85rem;
+    color: #444;
+    border-top: 1px solid #eee;
+    padding-top: 0.8rem;
+}
+
+/* Sección de Tabla */
+.seccion-horario {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.seccion-horario h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.tabla-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 0.85rem 0.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+thead th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.columna-hora {
+    font-weight: bold;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    white-space: nowrap;
+}
